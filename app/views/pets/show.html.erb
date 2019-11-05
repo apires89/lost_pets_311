@@ -1,0 +1,9 @@
+<p><%= @pet.name %></p>
+<p><%= @pet.species %></p>
+<p><%= @pet.address %></p>
+<p><%= @pet.date_found %></p>
+
+<%= link_to "Edit", edit_pet_path(@pet) %>
+<%= link_to pet_path(@pet), method: :delete do %>
+<button>DELETE</button>
+<% end %>
